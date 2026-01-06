@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #667eea;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .product {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+
+        .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+        .name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            color: #667eea;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechShop</h1>
+        <p>Premium Electronics</p>
+    </header>
+
+    <div class="container">
+        <div class="products">
+            <div class="product">
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2025/09/BG-IPHONE-2048px_IPHONE-17-PRO-MAX_BACK.jpg?auto=webp&quality=75&width=1024" alt="Smartphone">
+                <div class="name">Smartphone Pro</div>
+                <div class="price">$899</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://imageio.forbes.com/specials-images/imageserve/5fd00ea644cd62376ce2b6c1/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" alt="Laptop Ultra">
+                <div class="name">Laptop Ultra</div>
+                <div class="price">$1,299</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://media.tatacroma.com/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/316750_0_vimnZuqJH.png?updatedAt=1753957725283" alt="Headphones">
+                <div class="name">Headphones</div>
+                <div class="price">$349</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ACBJ2AycxUn8NI652TOsGTTmQZ3qRnZVMw&s" alt="Smart Watch">
+                <div class="name">Smart Watch</div>
+                <div class="price">$399</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAMhaU8MZcM2kLmkY0wRaHD_BafZSwf1c5_w&s" alt="Camera">
+                <div class="name">Camera</div>
+                <div class="price">$1,499</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0hwIBxSzW8lmGjABc6nn_odUZwGNG3dl_AA&s" alt="4K Monitor">
+                <div class="name">4K Monitor</div>
+                <div class="price">$649</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
